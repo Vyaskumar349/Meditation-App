@@ -38,12 +38,12 @@ let checkSongPlaying=(song)=>{
     if(song.paused){
         song.play();
         video.play();
-        play.src="Downloads/newpause.svg"
+        play.src="./svgs/newpause.svg"
     }
     else{
         song.pause();
         video.pause();
-        play.src="Downloads/media-play.svg";
+        play.src="./svgs/media-play.svg";
     }
   
 };
@@ -60,7 +60,7 @@ timeDisplay.textContent=`${minutes}:${seconds}`;
 if(song.currentTime >=fakeDuration){
     song.pause();
     song.currentTime=0;
-    play.src="Downloads/media-play.svg";
+    play.src="./svgs/media-play.svg";
     video.pause();
 }
 }
